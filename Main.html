@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="./data/image/project_icon.png">
+        <title>깨굴쓰 플래너</title>
+        
+        <link rel='stylesheet' href="Main.css">
+        <link rel='stylesheet' href="./data/css/menu(top).css">
+
+        <script src="Calender.js"></script>
+    </head>
+    <body style="background-color: #fffffc;">
+        <div class="container">
+            <div class="nav-list-container">
+                <div class="navbar-header">
+                    <a href="./Main.html"><img src="./data/image/project_icon.jpg"></a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="drop">
+                        <li class="nav-top"><a href="./planner/planner.html" class="top-title">플래너/목표</a>
+                            <ul class="dropdown">
+                                <li><a href="./planner/planner_year/planner_year.html">연간플래너</a></li>
+                                <li><a href="./planner/planner_month/planner_month.html">월간플래너</a></li>
+                                <li><a href="./planner/planner_week/planner_week.html">주간플래너</a></li>
+                                <li><a href="./planner/planner_day/planner_day.html">하루목표</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-top"><a href="./my_secret/my_space.html" class="top-title">나만의 공간</a>
+                            <ul class="dropdown">
+                                <li><a href="./my_secret/diary.html">일기장</a></li>
+                                <li><a href="./my_secret/wise_saying.html">오늘의 명언</a></li>
+                                <li><a href="./my_secret/music_playlist.html">Playlist</a></li>
+                                <li><a href="./my_secret/bucket_list.html">버킷리스트</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-top"><a href="./managing_time/managing_time.html" class="top-title">시간관리</a>
+                            <ul class="dropdown">
+                                <li><a href="./managing_time/timer/timer.html">타이머</a></li>
+                                <li><a href="./managing_time/stopwatch/stopwatch.html">스톱워치</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-top"><a href="./intranet/intranet.html" class="top-title">인트라넷</a>
+                            <ul class="dropdown">
+                                <li><a href="https://dimigo.in/" target="_blank">디미고인</a></li>
+                                <li><a href="https://benedu.co.kr/" target="_blank">베네듀</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-wrap">
+                <div class="content-left">
+                    <table class="calender">
+                        <thead class="calender-head">
+                            <tr>
+                                <td colspan="7" id="tbCalenderYear" class="calender-year">yyyy</td>
+                            </tr>
+                            <tr class="calender-month">
+                                <td id="prev" text-align="center"><label onclick="prevCalender()" style="cursor: pointer;">&#60;</label></td>
+                                <td text-align="center" id="tbCalenderMonth" id="current-month" colspan="5">mm</td>
+                                <td id="next" text-align="center"><label onclick="nextCalender()" style="cursor: pointer;">&#62;</label></td>
+                            </tr>
+                            <tr class="calender-week">
+                                <td text-align="center" class="sun">Sun</td>
+                                <td text-align="center">Mon</td>
+                                <td text-align="center">Tue</td>
+                                <td text-align="center">Wed</td>
+                                <td text-align="center">Thu</td>
+                                <td text-align="center">Fri</td>
+                                <td text-align="center" class="sat">Sat</td>
+                            </tr>
+                        </thead>
+                        <tbody class="calender-day" id="calenderDay">
+                            <script language="javascript" type="text/javascript">
+                                buildCalender();
+                            </script>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content-right">
+                    <div class="year-plan-list">
+                        <div class="blank"></div>
+                        <div class="main-list" id="mainList">
+                            <h2 style="text-align: center;">월간계획</h2>
+                            <ul class="list-head" id="listHead">
+                                <script src="List.js"></script>
+                            </ul>
+                            <div id="buttonWrap">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

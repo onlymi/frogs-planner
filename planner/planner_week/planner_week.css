@@ -1,0 +1,91 @@
+body {
+    overflow: hidden;
+}
+
+.nav-list-container {
+    position: absolute;
+    width: 160px;
+    height: 100%;
+    right: 0;
+    left: 0;
+    background-color: #d1ede1;
+}
+
+.nav-menu {
+    margin: 0 20px;
+    padding: 30px 0;
+}
+
+.menu-fixed {
+    position: fixed;
+    width: 120px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+}
+
+.nav-menu > li {
+    padding: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.list-header img {
+    position: relative;
+    height: 70px;
+}
+
+.list-header p {
+    font-size: 25px;
+    text-align: center;
+    color: #00ce2d;
+    font-family: Impact, '맑은 고딕', cursive;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+.menu-list {
+    margin: 50px 0;
+    padding: 0;
+}
+
+.menu-top {
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.top-title {
+    color: #7bc5ae;
+}
+
+.top-title:hover {
+    color: #003e19;
+    font-weight: bold;
+}
+
+.detail-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.detail-list li {
+    padding: 5px 0;
+}
+
+.detail-list li a {
+    color: #85b8cb;
+}
+
+.detail-list li a:hover {
+    color: #1d6a96;
+    font-weight: bold;
+}

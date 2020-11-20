@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/x-icon" href="../../data/image/project_icon.png">
+        <title>깨굴쓰 플래너</title>
+
+        <link rel="stylesheet" href="createAccount.css">
+
+        <script src="createAccount.js"></script>
+    </head>
+    <body>
+        <div>
+            <form action="process_createAccount.php" method="POST" name="userInfo" id="userInfo">
+                <a href="../login.html" id="goBack">←</a>
+                <span id="header">회원가입</span>
+                <hr style="border: 1px solid #000000;">
+                <br>
+                <p>
+                    <label for="userID">아이디<br></label>
+                    <input type="text" id="userID" class="notDuplicate" name="userID" size="40" placeholder="ID">
+                    <input type="button" class="duplicateCheck" value="중복확인" onclick="idDuplicateCheck()">
+                    <input type="hidden" id="userID_2" name="userID_2" value="0">
+                </p>
+                <p>
+                    <label for="userID">닉네임<br></label>
+                    <input type="text" id="nickname" class="notDuplicate" name="nickname" size="40" placeholder="닉네임">
+                    <input type="button" class="duplicateCheck" value="중복확인" onclick="nicknameDuplicateCheck()">
+                    <input type="hidden" id="nickname_2" name="nickname_2" value="0">
+                </p>
+                <p>
+                    <label for="userName">비밀번호<br></label>
+                    <input type="password" id="password" class="notDuplicate" name="password" size="55" maxlength="16" placeholder="비밀번호">
+                </p>
+                <p>
+                    <label for="userName">비밀번호 확인<br></label>
+                    <input type="password" id="passwordCheck" class="notDuplicate" name="passwordCheck" size="55" maxlength="16" placeholder="비밀번호 확인">
+                </p>
+                <p>
+                    <label for="userName">이름<br></label>
+                    <input type="text" id="userName" class="notDuplicate" name="userName" size="55" placeholder="실명을 입력하세요">
+                </p>
+                <p>
+                    <label for="userName">생년월일<br></label>
+                    <input type="date" id="userBirth" class="notDuplicate" name="userBirth" size="50" style="width: 546px;">
+                </p>
+                <p id="submitWrap">
+                    <input type="reset" class="submitBtn" value="초기화">
+                    <input type="button" class="submitBtn" name="submitBtn" value="가입하기" onclick="joinIn()">
+                </p>
+            </form>
+            <form>
+                <iframe src="" id="iframe" scrolling=no frameborder=no width=0 height=0 name="iframe"></iframe>
+            </form>
+        </div>
+    </body>
+</html>

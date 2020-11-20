@@ -1,0 +1,120 @@
+html {
+    height: 969px;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(to bottom, #7fffd0, #ffffff);
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    height: 100%;
+}
+
+.login-screen {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+}
+
+.login-header {
+    position: relative;
+    padding: 30px;
+}
+
+.login-header-image {
+    position: relative;
+    height: 140px;
+    text-align: center;
+}
+
+.login-header-image a {
+    position: relative;
+}
+
+.login-header-image img {
+    position: relative;
+    width: 130px;
+    height: 100px;
+    padding: 20px;
+    mix-blend-mode: darken;
+}
+
+.login-main {
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.login-main input {
+    margin: 20px;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+.login-main input:focus {
+    outline: none;
+}
+
+.userInfo {
+    font-size: 20px;
+    background-color: #ffffff7f;
+    border: none;
+}
+
+.userInfo:focus {
+    background-color: #bfeafc;
+    border: none;
+}
+
+#login-btn {
+    width: 493px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #6ec5ff;
+    border: none;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: #0099ff;
+}
+
+#forgotPasswordBtn {
+    position: relative;
+    text-align: center;
+}
+
+#forgotPasswordBtn a {
+    text-decoration: none;
+    color: #ffc3fa;
+}
+
+#forgotPasswordBtn a:hover {
+    text-decoration: none;
+    color: #ff47f0;
+}
+
+#createAccountBtn {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+}
+
+#createAccountBtn a {
+    text-decoration: none;
+    color: #b38aff;
+}
+
+#createAccountBtn a:hover {
+    text-decoration: none;
+    color: #7023ff;
+}

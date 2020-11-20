@@ -1,0 +1,494 @@
+body {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 3100px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Exo+2:900");
+
+.bubbles-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 100%;
+    max-width: 15rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    overflow: visible;
+}
+  
+.bubbles {
+    width: 100%;
+    height: auto;
+}
+
+.bubbles circle {
+    stroke: white;
+    fill: none;
+}
+
+.bubbles > g > g:nth-of-type(3n) circle {
+    stroke: #87f5fb;
+}
+
+.bubbles > g > g:nth-of-type(4n) circle {
+    stroke: #8be8cb;
+}
+  
+.bubbles-large {
+    overflow: visible;
+}
+
+.bubbles-large > g {
+    -webkit-transform: translateY(2048px);
+            transform: translateY(2048px);
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.bubbles-large g:nth-of-type(1) {
+    -webkit-animation: up 6.5s infinite;
+            animation: up 6.5s infinite;
+}
+
+.bubbles-large g:nth-of-type(1) g {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+}
+
+.bubbles-large g:nth-of-type(1) circle {
+    -webkit-animation: wobble 3s infinite ease-in-out;
+            animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(2) {
+    -webkit-animation: up 5.25s 250ms infinite;
+            animation: up 5.25s 250ms infinite;
+}
+
+.bubbles-large g:nth-of-type(2) g {
+    -webkit-transform: translateX(450px);
+            transform: translateX(450px);
+}
+
+.bubbles-large g:nth-of-type(2) circle {
+    -webkit-animation: wobble 3s infinite ease-in-out;
+            animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(3) {
+    -webkit-animation: up 6s 750ms infinite;
+            animation: up 6s 750ms infinite;
+}
+
+.bubbles-large g:nth-of-type(3) g {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+}
+
+.bubbles-large g:nth-of-type(3) circle {
+    -webkit-animation: wobble 3s infinite ease-in-out;
+            animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(4) {
+    -webkit-animation: up 5.5s 1.5s infinite;
+            animation: up 5.5s 1.5s infinite;
+}
+
+.bubbles-large g:nth-of-type(4) g {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+}
+
+.bubbles-large g:nth-of-type(4) circle {
+    -webkit-animation: wobble 3s infinite ease-in-out;
+            animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-large g:nth-of-type(5) {
+    -webkit-animation: up 6.5s 4s infinite;
+            animation: up 6.5s 4s infinite;
+}
+.bubbles-large g:nth-of-type(5) g {
+    -webkit-transform: translateX(675px);
+            transform: translateX(675px);
+}
+
+.bubbles-large g:nth-of-type(5) circle {
+    -webkit-animation: wobble 3s infinite ease-in-out;
+            animation: wobble 3s infinite ease-in-out;
+}
+  
+.bubbles-small {
+    overflow: visible;
+}
+
+.bubbles-small > g {
+    -webkit-transform: translateY(2048px);
+            transform: translateY(2048px);
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.bubbles-small g circle {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+
+.bubbles-small g:nth-of-type(1) {
+    -webkit-animation: up 5.25s infinite;
+            animation: up 5.25s infinite;
+}
+
+.bubbles-small g:nth-of-type(1) g {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+}
+
+.bubbles-small g:nth-of-type(1) circle {
+    -webkit-animation: wobble 3s infinite ease-in-out;
+            animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(2) {
+    -webkit-animation: up 5.75s infinite;
+            animation: up 5.75s infinite;
+}
+
+.bubbles-small g:nth-of-type(2) g {
+    -webkit-transform: translateX(750px);
+            transform: translateX(750px);
+}
+
+.bubbles-small g:nth-of-type(2) circle {
+    -webkit-animation: wobble 3s infinite ease-in-out;
+            animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(3) {
+    -webkit-animation: up 5.25s 250ms infinite;
+            animation: up 5.25s 250ms infinite;
+}
+
+.bubbles-small g:nth-of-type(3) g {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+}
+
+.bubbles-small g:nth-of-type(3) circle {
+    -webkit-animation: wobble 3s 250ms infinite ease-in-out;
+            animation: wobble 3s 250ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(4) {
+    -webkit-animation: up 5.75s 325ms infinite;
+            animation: up 5.75s 325ms infinite;
+}
+
+.bubbles-small g:nth-of-type(4) g {
+    -webkit-transform: translateX(180px);
+            transform: translateX(180px);
+}
+
+.bubbles-small g:nth-of-type(4) circle {
+    -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+            animation: wobble 3s 325ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(5) {
+    -webkit-animation: up 6s 125ms infinite;
+            animation: up 6s 125ms infinite;
+}
+
+.bubbles-small g:nth-of-type(5) g {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+}
+
+.bubbles-small g:nth-of-type(5) circle {
+    -webkit-animation: wobble 3s 250ms infinite ease-in-out;
+            animation: wobble 3s 250ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(6) {
+    -webkit-animation: up 5.13s 250ms infinite;
+            animation: up 5.13s 250ms infinite;
+}
+
+.bubbles-small g:nth-of-type(6) g {
+    -webkit-transform: translateX(650px);
+            transform: translateX(650px);
+}
+
+.bubbles-small g:nth-of-type(6) circle {
+    -webkit-animation: wobble 3s 125ms infinite ease-in-out;
+            animation: wobble 3s 125ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(7) {
+    -webkit-animation: up 6.25s 350ms infinite;
+            animation: up 6.25s 350ms infinite;
+}
+
+.bubbles-small g:nth-of-type(7) g {
+    -webkit-transform: translateX(480px);
+            transform: translateX(480px);
+}
+
+.bubbles-small g:nth-of-type(7) circle {
+    -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+            animation: wobble 3s 325ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(8) {
+    -webkit-animation: up 7s 200ms infinite;
+            animation: up 7s 200ms infinite;
+}
+
+.bubbles-small g:nth-of-type(8) g {
+    -webkit-transform: translateX(330px);
+            transform: translateX(330px);
+}
+
+.bubbles-small g:nth-of-type(8) circle {
+    -webkit-animation: wobble 3s 325ms infinite ease-in-out;
+            animation: wobble 3s 325ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(9) {
+    -webkit-animation: up 6.25s 233ms infinite;
+            animation: up 6.25s 233ms infinite;
+}
+
+.bubbles-small g:nth-of-type(9) g {
+    -webkit-transform: translateX(230px);
+            transform: translateX(230px);
+}
+
+.bubbles-small g:nth-of-type(9) circle {
+    -webkit-animation: wobble 3s 275ms infinite ease-in-out;
+            animation: wobble 3s 275ms infinite ease-in-out;
+}
+
+.bubbles-small g:nth-of-type(10) {
+    -webkit-animation: up 6s 900ms infinite;
+            animation: up 6s 900ms infinite;
+}
+
+.bubbles-small g:nth-of-type(10) g {
+    -webkit-transform: translateX(730px);
+            transform: translateX(730px);
+}
+
+.bubbles-small g:nth-of-type(10) circle {
+    -webkit-animation: wobble 2s 905ms infinite ease-in-out;
+            animation: wobble 2s 905ms infinite ease-in-out;
+}
+  
+@-webkit-keyframes wobble {
+    33% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+    }
+    66% {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+}
+  
+@keyframes wobble {
+    33% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+    }
+    66% {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+}
+
+@-webkit-keyframes up {
+    0% {
+      opacity: 0;
+    }
+    10%, 90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(-1024px);
+              transform: translateY(-1024px);
+    }
+}
+
+@keyframes up {
+    0% {
+      opacity: 0;
+    }
+    10%, 90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(-1024px);
+              transform: translateY(-1024px);
+    }
+}
+
+/* ------------------------------------------------------------- */
+
+.content-wrap {
+    position: relative;
+    float: right;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content-wrap h1 {
+    margin: 0;
+}
+
+.content-wrap a {
+    text-decoration: none;
+}
+
+.shortcut {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100px;
+    border: 1px solid #ffffff;
+    margin-top: 100px;
+    margin: 0 825px;
+    padding: 5px;
+    bottom: -50px;
+}
+
+.shortcut:hover {
+    background-color: #e9defa;
+    border: 1px solid #ffc44f;
+}
+
+.shortcut p {
+    text-align: center;
+    color: #ffffff;
+}
+
+.shortcut:hover p {
+    color: #4dc9fa;
+}
+
+.main-wrap {
+    z-index: 0;
+    height: 600px;
+    background: linear-gradient(to bottom, #efd3ff, #b6f4ff);
+}
+
+.planner-title {
+    text-align: center;
+    /* text-shadow: 0px 4px 48px hsla(0, 0%, 100%, 0.2); */
+}
+
+.planner-title h1 {
+    padding: 150px 0;
+    font-family: 'Forte', sans-serif;
+    font-size: 200px;
+    color: #8cfff0;
+    text-shadow: -1px 0 #00ff00, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+.wrap-animation-left {
+    padding: 50px 0;
+}
+
+/* .wrap-animation-left:hover {
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    transform: translateX(10%);
+} */
+
+.wrap-animation-left h1 {
+    padding: 0 200px;
+    font-size: 100px;
+    font-family: 'Impact', sans-serif;
+    color: #ffc2e5;
+}
+
+.wrap-animation-right {
+    float: right;
+    padding: 50px 0;
+}
+
+.wrap-animation-right h1 {
+    padding: 0 200px;
+    font-size: 100px;
+    font-family: 'Impact', sans-serif;
+    color: #c9b4cf;
+}
+
+.first-wrap {
+    height: 500px;
+    background: linear-gradient(to bottom, #b6f4ff, #efd3ff);
+}
+
+.second-wrap {
+    height: 500px;
+    background: linear-gradient(to bottom, #efd3ff, #f8ebff);
+}
+
+.third-wrap {
+    height: 500px;
+    background: linear-gradient(to bottom, #f8ebff, #dcfff2);
+}
+
+.fourth-wrap {
+    height: 500px;
+    background: linear-gradient(to bottom, #dcfff2, #b6f4ff);
+}
+
+.last-wrap {
+    height: 500px;
+    background: linear-gradient(to top, #efd3ff, #b6f4ff);
+}
+/* background: linear-gradient(to top, #a0f0b0, #a0ddf0); */
+
+.introduce {
+    height: 400px;
+}
+
+.introduce p {
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    color: #808080;
+}
+
+.sns-logo {
+    float: right;
+    margin: 0 50px;
+    padding: 40px 0;
+    height: 20px;
+    width: 20px;
+}
+
+.facebook-logo:hover path{
+    fill: #1878f2;
+}
